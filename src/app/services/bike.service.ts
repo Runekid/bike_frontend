@@ -22,6 +22,6 @@ export class BikeService {
 
   createBikeRegistration(bike: any) {
     let body = JSON.stringify(bike);
-    this.http.post('/server/api/v1/bikes', body, httpOptions);
+    return this.http.post('/server/api/v1/bikes', body, httpOptions);
   } 
 }
